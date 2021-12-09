@@ -1,12 +1,6 @@
 import { PluginListenerHandle } from "@capacitor/core";
 
-declare module '@capacitor/core' {
-  interface PluginRegistry {
-    SafeAreaPlugin: SafeArea;
-  }
-}
-
-export interface SafeArea {
+export interface SafeAreaPlugin {
   refresh(): Promise<void>;
   getSafeAreaInsets(): Promise<SafeAreaInsetsResult>;
   addListener(eventName: "safeAreaPluginsInsetChange", listener: SafeAreaInsetsChangedCallback): PluginListenerHandle;

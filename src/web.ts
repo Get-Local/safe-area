@@ -1,7 +1,7 @@
 import { WebPlugin } from '@capacitor/core';
-import { SafeAreaInsets, SafeArea, SafeAreaInsetsChangeEventName, SafeAreaInsetsResult } from './definitions';
+import { SafeAreaInsets, SafeAreaPlugin, SafeAreaInsetsChangeEventName, SafeAreaInsetsResult } from './definitions';
 
-export class SafeAreaPluginWeb extends WebPlugin implements SafeArea {
+export class SafeAreaPluginWeb extends WebPlugin implements SafeAreaPlugin {
 	constructor() {
 		super({
 		name: 'SafeAreaPlugin',
